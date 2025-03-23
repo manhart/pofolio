@@ -22,7 +22,7 @@ class PofolioApp extends Weblication
             'host' => MYSQL_HOST,
             'database' => constant('DB_POFOLIO'),
         ];
-        $this->addDataInterface(DataInterface::createDataInterface($connectOptions));
+        DataInterface::createDataInterface($connectOptions);
         return $this;
     }
 }
